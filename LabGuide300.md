@@ -237,7 +237,7 @@ In order to access data in the Object Store you have to enable your database use
 
     -   Enter the URL of **customers.csv** as the file to load. You constructed the URL in STEP 8 Construct the URLs of the Files on Your OCI Object Storage. For example, the URL might look something like:
 
-        https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/dbayard00/ADWCLab/customers.csv
+        https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/customers.csv
 
     -   Select the Credential you previously created for authentication with the Object Store, **OBJ\_STORE\_CRED**
 
