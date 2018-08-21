@@ -190,10 +190,10 @@ To load data from the Oracle Cloud Infrastructure(OCI) Object Storage you will n
 -	Authorization Token or Password (in the dbms_cloud package): CRx{8JcdL6Dw6_wuG0zQ
 
 -	You will also use the following SWIFT URLs to load data through out the rest of the lab:
-https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/alex/customers.csv
-https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/alex/channels_error.csv
-https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/alex/products.txt
-https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/alex/sales.csv.gz
+https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/customers.csv
+https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/channels_error.csv
+https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/products.txt
+https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/sales.csv.gz
 
 
 
