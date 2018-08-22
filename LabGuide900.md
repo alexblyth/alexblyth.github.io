@@ -58,17 +58,17 @@ You want to secure your data from the desktop all the way from the client applic
 
 - In the DOS window, type the command __‘cd c:\wallet’__ and hit return to execute.  As a shortcut, type __‘cd ‘__ and then do a right click to paste the text on the clipboard from the previous step.  
 
-- We will now create the necessary directory location and copy the file cwallet.sso to the proper location for DV Desktop (__%HOMEPATH%\AppData\Local\DVDesktop\components\OBIS\DWCS__) to find.  Execute the commands (one by one).  If the directory has already been created, then skip the MKDIR command below and just COPY the wallet file.   
+- We will now create the necessary directory location and copy the file cwallet.sso to the proper location for DV Desktop (__%HOMEPATH%\AppData\Local\DVDesktop\components\OBIS\DWCS__) to find.  Execute the commands (one by one).  If the directory has already been created, then skip the MKDIR command below and just COPY the wallet file.   Remember to change the "username" field in the commands below
 
    ```
-   MKDIR C:\%HOMEPATH%\AppData\Local\DVDesktop\components\OBIS\DWCS\
-   COPY cwallet.sso C:\%HOMEPATH%\AppData\Local\DVDesktop\components\OBIS\DWCS\
+   MKDIR C:\Users\<username>\AppData\Local\DVDesktop\components\OBIS\DWCS\
+   COPY cwallet.sso C:\Users\<username>\AppData\Local\DVDesktop\components\OBIS\DWCS\
    ```
 
 - Go to the directory and ensure that the file was copied over.  At the command prompt, type 
 
    ```
-   CD C:\%HOMEPATH%\AppData\Local\DVDesktop\components\OBIS\DWCS
+   CD C:\Users\<username>\AppData\Local\DVDesktop\components\OBIS\DWCS\
    ```
    and
 
