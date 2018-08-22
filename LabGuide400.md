@@ -76,7 +76,7 @@ To **log issues**, click [here](https://github.com/millerhoo/journey4-adwc/issue
 
     -   Enter the URL of **channels_error.csv** as the file to load. You constructed the URL in data loading lab. For example, the URL might look something like:
 
-        https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/dbayard00/ADWCLab/channels_error.csv
+        https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/channels_error.csv
 
     -   Select the Credential you previously created for authentication with the Object Store, **OBJ\_STORE\_CRED**
 

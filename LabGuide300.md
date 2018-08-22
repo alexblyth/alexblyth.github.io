@@ -118,86 +118,8 @@ When you are satisfied with the file content view, click **NEXT**.
 
 
 
-# Setup the OCI Object Store
-## Steps    
-### STEP 4: Navigate to the OCI Compute Console 
 
--   The easiest way to get to the **OCI Compute Console** is to first navigate to the My Services Dashboard page:
-    ![](images/300/snap0014294.jpg)
-
--   From the My Services Dashboard page, open the **upper left menu** and expand **Services**.  Under Services, click on the entry titled **Compute**.  *Hint: you might want to right-click on Compute and choose "open in new tab" so that you can keep the My Services Dashboard open*:
-    ![](images/300/snap0014295.jpg)
-
--   This should take you to the OCI Compute Console:
-    ![](images/300/snap0014296.jpg)
-
-
-### STEP 5: Navigate to the Storage Tab, then Object Storage 
-To learn more about the OCI Object Storage, check out this <a href="https://docs.us-phoenix-1.oraclecloud.com/Content/GSG/Tasks/addingbuckets.htm" target="_blank">documentation</a> .
-
--   In the OCI Compute Console, click on the **Storage** tab, then click on **Object Storage** on the left-hand menu:
-    ![](images/300/snap0014297.jpg)
-
--   Choose the root compartment in the **COMPARTMENT** drop-down if it is not already choosen. The name of your root compartment might be different.
-    ![](images/300/snap0014298.jpg)
-
-### STEP 6: Create a Bucket for the Object Storage
-In OCI Object Storage, a bucket is the terminology for a container of multiple files. 
-
--   Click the **Create Bucket** button:
-    ![](images/300/snap0014299.jpg)
-
--   **Name your bucket** and click **Create Bucket** button. 
-    ![](images/300/snap0014300.jpg)
-
-### STEP 7: Upload Files to Your OCI Object Store Bucket
-
--   Click on your **bucket name** to open it:
-    ![](images/300/snap0014301.jpg)
-
--   Click on the **Upload Object** button:
-    ![](images/300/snap0014302.jpg)
-
--   Using the browse button or drag-and-drop select the **sales.csv.gz** file you downloaded earlier and click Upload Object:
-    ![](images/300/snap0014303.jpg)
-
--   Repeat this for the **customers.csv**, **products.txt**, and **channels_error.csv** files.
-
--   The end result should look like this with all 4 files listed under Objects:
-    ![](images/300/snap0014304.jpg)
-
-### STEP 8: Construct the URLs of the Files on Your OCI Object Storage
--   Construct the URL that points to the location of the customers.csv file staged in the OCI Object Storage. The URL is structured as follows. The values for you to specify are in bold:
-
-    https://swiftobjectstorage.<**region_name**>.oraclecloud.com/v1/<**tenant_name**>/<**bucket_name**>/<**file_name**>
-
-In this example, the region name is us-ashburn-1, the tenant name is dbayard00, and the bucket name is ADWCLab. So the URL of the customers.csv file is:  https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/dbayard00/ADWCLab/customers.csv . Yours would be different.
-
-![](images/300/ConstructURLs.png)
-
--   **Repeat** this for the **sales.csv.gz**, **products.txt**, and **channels\_error.csv** files. 
-
--   **Save** the URLs you constructed to a note. We will use the URLs in the following steps.
-
-### STEP 9: Creating an Object Store Auth Token
-
-To load data from the Oracle Cloud Infrastructure(OCI) Object Storage you will need an OCI user with the appropriate privileges to read data (or upload) data to the Object Store. The communication between the database and the object store relies on the Swift protocol and the OCI user Auth Token.
-
--   Normally, you would create a user and Authorization Token. For the purposes of simplicity, this has already been done. You will use the following username and token in Step 10 to create a credential in the ADW Database.
-
--	credential user name: cloud.admin
-
--	Authorization Token or Password (in the dbms_cloud package): CRx{8JcdL6Dw6_wuG0zQ
-
--	You will also use the following SWIFT URLs to load data through out the rest of the lab:
-https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/customers.csv
-https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/channels_error.csv
-https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/products.txt
-https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/sales.csv.gz
-
-
-
-### STEP 10: Create a Database Credential for Your User
+### STEP 4: Create a Database Credential for Your User
 
 In order to access data in the Object Store you have to enable your database user to authenticate itself with the Object Store using your OCI object store account and Auth token. You do this by creating a private CREDENTIAL object for your user that stores this information encrypted in your Autonomous Data Warehouse. This information is only usable for your user schema.
 
@@ -208,6 +130,20 @@ In order to access data in the Object Store you have to enable your database use
     ![](./images/300/snap0015312.jpg)
 
 <!-- -->
+
+Use the following username and "password" (also know as authorization token)
+
+    username - cloud.admin
+    password - CRx{8JcdL6Dw6_wuG0zQ
+
+You will be using the following URLs to load data into the ADW database
+
+
+https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/customers.csv
+https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/channels_error.csv
+https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/products.txt
+https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/sales.csv.gz
+
 
 -   Run the script. 
 
@@ -222,7 +158,7 @@ In order to access data in the Object Store you have to enable your database use
 
 ## Steps
 
-### STEP 11: Loading Data Using the Data Import Wizard in SQL Developer
+### STEP 5 : Loading Data Using the Data Import Wizard in SQL Developer
 
 
 -   Expand ‘**Tables**’ in your user schema object tree. If you don't see any tables, click on the refresh icon (two curved arrows) to refresh the table list.  You will see all the tables you have created previously. Select table **CUSTOMERS**. Clicking the right mouse button opens the context-sensitive menu in SQL Developer; select ‘**Import Data**’:
@@ -296,7 +232,7 @@ When you are satisfied with the data preview, click **NEXT**.
 
 ## Steps
 
-### STEP 12: Loading Data Using the PL/SQL Package, DBMS_CLOUD
+### STEP 6 : Loading Data Using the PL/SQL Package, DBMS_CLOUD
 
 As an alternative to the wizard-guided data load, you can use the PL/SQL package **DBMS_CLOUD** directly. This is the preferred choice for any load automation.
 
@@ -317,7 +253,7 @@ As an alternative to the wizard-guided data load, you can use the PL/SQL package
 
     ![](./images/300/Picture300-20.png)
 
-### STEP 13: Troubleshooting DBMS_CLOUD data loads
+### STEP 7 : Troubleshooting DBMS_CLOUD data loads
 
 -   Connected as your user in SQL Developer, run the following query to look at past and current data loads.
 ```
@@ -347,3 +283,53 @@ A load or external table validation that errors out is indicated by status=FAILE
 -   To learn more about how to specify file formats, delimiters, and more, you can review DBMS_CLOUD Package Format Options: https://docs.oracle.com/en/cloud/paas/autonomous-data-warehouse-cloud/user/dbmscloud-reference.html
 
 -   Keep your SQL Deveoper open and move to the next lab - Querying External Data.
+
+# Setup the OCI Object Store
+## Steps    
+### STEP 8 : Navigate to the OCI Compute Console 
+
+-   The easiest way to get to the **OCI Compute Console** is to first navigate to the My Services Dashboard page:
+    ![](images/300/snap0014294.jpg)
+
+-   From the My Services Dashboard page, open the **upper left menu** and expand **Services**.  Under Services, click on the entry titled **Compute**.  *Hint: you might want to right-click on Compute and choose "open in new tab" so that you can keep the My Services Dashboard open*:
+    ![](images/300/snap0014295.jpg)
+
+-   This should take you to the OCI Compute Console:
+    ![](images/300/snap0014296.jpg)
+
+
+### STEP 9 : Navigate to the Storage Tab, then Object Storage 
+To learn more about the OCI Object Storage, check out this <a href="https://docs.us-phoenix-1.oraclecloud.com/Content/GSG/Tasks/addingbuckets.htm" target="_blank">documentation</a> .
+
+-   In the OCI Compute Console, click on the **Storage** tab, then click on **Object Storage** on the left-hand menu:
+    ![](images/300/snap0014297.jpg)
+
+-   Choose the root compartment in the **COMPARTMENT** drop-down if it is not already choosen. The name of your root compartment might be different.
+    ![](images/300/snap0014298.jpg)
+
+### STEP 10 : Create a Bucket for the Object Storage
+In OCI Object Storage, a bucket is the terminology for a container of multiple files. 
+
+-   Click the **Create Bucket** button:
+    ![](images/300/snap0014299.jpg)
+
+-   **Name your bucket** and click **Create Bucket** button. 
+    ![](images/300/snap0014300.jpg)
+
+### STEP 11 : Upload Files to Your OCI Object Store Bucket
+
+-   Click on your **bucket name** to open it:
+    ![](images/300/snap0014301.jpg)
+
+-   Click on the **Upload Object** button:
+    ![](images/300/snap0014302.jpg)
+
+-   Using the browse button or drag-and-drop select the **sales.csv.gz** file you downloaded earlier and click Upload Object:
+    ![](images/300/snap0014303.jpg)
+
+-   Repeat this for the **customers.csv**, **products.txt**, and **channels_error.csv** files.
+
+-   The end result should look like this with all 4 files listed under Objects:
+    ![](images/300/snap0014304.jpg)
+
+Congratulations - you have now uploaded files into Oracle Object Storage!
