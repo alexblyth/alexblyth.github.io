@@ -274,7 +274,8 @@ A load or external table validation that errors out is indicated by status=FAILE
 
 -   Keep your SQL Deveoper open and move to the next lab - Querying External Data.
 
-# Setup the OCI Object Store
+# Setup the OCI Object Store - (Optional Lab)
+This lab shows __one__ way of loading files into the Oracle Object Store which can then be loaded in to the Oracle Autonomous Data Warehouse. Other options to load data include Oracle Data Intgration Cloud Platofrm, Oracle GoldenGate & Data Integrator and 3rd Party ETL tools. Oracle Autonomous Data Warehouse is also capable of querying these files directly from the Object Storage, as you have seen in earlier labs.
 ## Steps    
 ### STEP 8 : Navigate to the Storage Tab, then Object Storage 
 To learn more about the OCI Object Storage, check out this <a href="https://docs.us-phoenix-1.oraclecloud.com/Content/GSG/Tasks/addingbuckets.htm" target="_blank">documentation</a> .
