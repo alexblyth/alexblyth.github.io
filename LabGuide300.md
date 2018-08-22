@@ -77,7 +77,6 @@ Note that you do not need to specify anything other than the list of columns whe
 
 # Load data from the local file system
 ## Steps
-
 ### STEP 3: Loading Data Using the Data Import Wizard in SQL Developer
 
 -   Expand ‘**Tables**’ in your user schema object tree. If you don't see any tables, click on the refresh icon (two curved arrows) to refresh the table list.  You will see all the tables you have created previously. Select table **CHANNELS**. Clicking the right mouse button opens the context-sensitive menu in SQL Developer; select ‘**Import Data**’:
@@ -117,11 +116,11 @@ When you are satisfied with the file content view, click **NEXT**.
 ![](./images/300/snap0014657.jpg)
 
 
-
-
+# Load data from the Object Store using the Data Import Wizard
+## Steps
 ### STEP 4: Create a Database Credential for Your User
 
-In order to access data in the Object Store you have to enable your database user to authenticate itself with the Object Store using your OCI object store account and Auth token. You do this by creating a private CREDENTIAL object for your user that stores this information encrypted in your Autonomous Data Warehouse. This information is only usable for your user schema.
+-   In order to access data in the Object Store you have to enable your database user to authenticate itself with the Object Store using your OCI object store account and Auth token. We have created this for you in a commonly used account.
 
 -   Connected as your user in SQL Developer, copy and paste <a href="./scripts/300/create_credential.txt" target="_blank">this code snippet</a> to SQL Developer worksheet.
 
@@ -152,14 +151,7 @@ https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/sa
 -   Now you are ready to load data from the Object Store.
 
 
-
-
-# Load data from the Object Store using the Data Import Wizard
-
-## Steps
-
 ### STEP 5 : Loading Data Using the Data Import Wizard in SQL Developer
-
 
 -   Expand ‘**Tables**’ in your user schema object tree. If you don't see any tables, click on the refresh icon (two curved arrows) to refresh the table list.  You will see all the tables you have created previously. Select table **CUSTOMERS**. Clicking the right mouse button opens the context-sensitive menu in SQL Developer; select ‘**Import Data**’:
 
@@ -229,9 +221,7 @@ When you are satisfied with the data preview, click **NEXT**.
 -   The final screen reflects all your choices made in the Wizard. Click **FINISH** to load the data into table CUSTOMERS.
 
 # Load data from the Object Store using DBMS_CLOUD
-
 ## Steps
-
 ### STEP 6 : Loading Data Using the PL/SQL Package, DBMS_CLOUD
 
 As an alternative to the wizard-guided data load, you can use the PL/SQL package **DBMS_CLOUD** directly. This is the preferred choice for any load automation.
