@@ -21,6 +21,49 @@ At this point, you should have performed the following:
 - Installation of Oracle Data Visualization Desktop
 - Access to an ADWC instance 
 
+## Create a View using Tables in the SH Schema
+
+### Execute the Provided Script in SQL Developer
+
+For the sake of this test drive exercises, we are helping make it as simple as possible for you.  We don’t want the required steps of creating a data model required in any reporting, analytics or data visualization tool to overshadow the fact that Autonomous Data Warehouse is simple.  In this exercise, we are using the SH schema provided and will be creating a simple view.
+
+- Go back to SQL Developer as you did in the previous exercises and connect to the __‘admin’__ user.   Cut and paste and execute the following script.  
+
+   ```
+   drop view DV_SH_VIEW;
+
+   create or replace view DV_SH_VIEW as select 
+   P.PROD_NAME,
+   P.PROD_DESC,
+   P.PROD_CATEGORY,
+   P.PROD_SUBCATEGORY,
+   P.PROD_LIST_PRICE,
+   S.QUANTITY_SOLD,
+   S.AMOUNT_SOLD,
+   X.CUST_GENDER,
+   X.CUST_YEAR_OF_BIRTH,
+   X.CUST_MARITAL_STATUS,
+   X.CUST_INCOME_LEVEL,
+   R.COUNTRY_NAME,
+   R.COUNTRY_SUBREGION,
+   R.COUNTRY_REGION,
+   T.TIME_ID,
+   T.DAY_NAME,
+   T.CALENDAR_MONTH_NAME,
+   T.CALENDAR_YEAR from
+   SH.PRODUCTS P,
+   SH.SALES S,
+   SH.CUSTOMERS X,
+   SH.COUNTRIES R,
+   SH.TIMES T where
+   S.PROD_ID=P.PROD_ID and
+   S.CUST_ID=X.CUST_ID and
+   S.TIME_ID=T.TIME_ID and
+   X.COUNTRY_ID=R.COUNTRY_ID;
+   ```
+
+   ![](./images/900/image012.png)
+
 ## Set Up Local Windows Desktop Environment
 
 ### Installing Oracle Data Visualization Desktop on a Windows Desktop
@@ -77,50 +120,6 @@ You want to secure your data from the desktop all the way from the client applic
    ```
 
    ![](./images/900/image011.png)
-
-
-## Create a View using Tables in the SH Schema
-
-### Execute the Provided Script in SQL Developer
-
-For the sake of this test drive exercises, we are helping make it as simple as possible for you.  We don’t want the required steps of creating a data model required in any reporting, analytics or data visualization tool to overshadow the fact that Autonomous Data Warehouse is simple.  In this exercise, we are using the SH schema provided and will be creating a simple view.
-
-- Go back to SQL Developer as you did in the previous exercises and connect to the __‘admin’__ user.   Cut and paste and execute the following script.  
-
-   ```
-   drop view DV_SH_VIEW;
-
-   create or replace view DV_SH_VIEW as select 
-   P.PROD_NAME,
-   P.PROD_DESC,
-   P.PROD_CATEGORY,
-   P.PROD_SUBCATEGORY,
-   P.PROD_LIST_PRICE,
-   S.QUANTITY_SOLD,
-   S.AMOUNT_SOLD,
-   X.CUST_GENDER,
-   X.CUST_YEAR_OF_BIRTH,
-   X.CUST_MARITAL_STATUS,
-   X.CUST_INCOME_LEVEL,
-   R.COUNTRY_NAME,
-   R.COUNTRY_SUBREGION,
-   R.COUNTRY_REGION,
-   T.TIME_ID,
-   T.DAY_NAME,
-   T.CALENDAR_MONTH_NAME,
-   T.CALENDAR_YEAR from
-   SH.PRODUCTS P,
-   SH.SALES S,
-   SH.CUSTOMERS X,
-   SH.COUNTRIES R,
-   SH.TIMES T where
-   S.PROD_ID=P.PROD_ID and
-   S.CUST_ID=X.CUST_ID and
-   S.TIME_ID=T.TIME_ID and
-   X.COUNTRY_ID=R.COUNTRY_ID;
-   ```
-
-   ![](./images/900/image012.png)
 
 
 ## Create a Connection to ADWC from Data Visualization Desktop
