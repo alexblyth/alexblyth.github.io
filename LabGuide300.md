@@ -276,19 +276,7 @@ A load or external table validation that errors out is indicated by status=FAILE
 
 # Setup the OCI Object Store
 ## Steps    
-### STEP 8 : Navigate to the OCI Compute Console 
-
--   The easiest way to get to the **OCI Compute Console** is to first navigate to the My Services Dashboard page:
-    ![](images/300/snap0014294.jpg)
-
--   From the My Services Dashboard page, open the **upper left menu** and expand **Services**.  Under Services, click on the entry titled **Compute**.  *Hint: you might want to right-click on Compute and choose "open in new tab" so that you can keep the My Services Dashboard open*:
-    ![](images/300/snap0014295.jpg)
-
--   This should take you to the OCI Compute Console:
-    ![](images/300/snap0014296.jpg)
-
-
-### STEP 9 : Navigate to the Storage Tab, then Object Storage 
+### STEP 8 : Navigate to the Storage Tab, then Object Storage 
 To learn more about the OCI Object Storage, check out this <a href="https://docs.us-phoenix-1.oraclecloud.com/Content/GSG/Tasks/addingbuckets.htm" target="_blank">documentation</a> .
 
 -   In the OCI Compute Console, click on the **Storage** tab, then click on **Object Storage** on the left-hand menu:
@@ -297,7 +285,7 @@ To learn more about the OCI Object Storage, check out this <a href="https://docs
 -   Choose the root compartment in the **COMPARTMENT** drop-down if it is not already choosen. The name of your root compartment might be different.
     ![](images/300/snap0014298.jpg)
 
-### STEP 10 : Create a Bucket for the Object Storage
+### STEP 9 : Create a Bucket for the Object Storage
 In OCI Object Storage, a bucket is the terminology for a container of multiple files. 
 
 -   Click the **Create Bucket** button:
@@ -306,7 +294,7 @@ In OCI Object Storage, a bucket is the terminology for a container of multiple f
 -   **Name your bucket** and click **Create Bucket** button. 
     ![](images/300/snap0014300.jpg)
 
-### STEP 11 : Upload Files to Your OCI Object Store Bucket
+### STEP 10 : Upload Files to Your OCI Object Store Bucket
 
 -   Click on your **bucket name** to open it:
     ![](images/300/snap0014301.jpg)
