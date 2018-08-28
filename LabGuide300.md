@@ -124,16 +124,19 @@ When you are satisfied with the file content view, click **NEXT**.
 
 -   Connected as your user in SQL Developer, copy and paste <a href="./scripts/300/create_credential.txt" target="_blank">this code snippet</a> to SQL Developer worksheet.
 
-    Specify the credentials for your Oracle Cloud Infrastructure Object Storage service: The username will be the **OCI username** (which is not the same as your database username) and the OCI object store **Auth Token** you generated in the previous step.  In this example, the crediential object named **OBJ\_STORE\_CRED** is created. You reference this credential name in the following steps.
+    Specify the credentials for your Oracle Cloud Infrastructure Object Storage service: The username will be the **OCI username** (which is not the same as your database username) and the OCI object store **Auth Token** listed below.  In this example, the crediential object named **OBJ\_STORE\_CRED** is created. You reference this credential name in the following steps.
+
+    Use the following username and "password" (also know as authorization token)
+
+    username - **cloud.admin**
+    
+    password - **CRx{8JcdL6Dw6_wuG0zQ**
 
     ![](./images/300/snap0015312.jpg)
 
 <!-- -->
 
-Use the following username and "password" (also know as authorization token)
 
-    username - cloud.admin
-    password - CRx{8JcdL6Dw6_wuG0zQ
 
 You will be using the following URLs to load data into the ADW database
 
