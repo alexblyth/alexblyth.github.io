@@ -314,4 +314,4 @@ In OCI Object Storage, a bucket is the terminology for a container of multiple f
 -   The end result should look like this with all 4 files listed under Objects:
     ![](images/300/snap0014304.jpg)
 
-Congratulations - you have now uploaded files into Oracle Object Storage!
+Congratulations - you have now uploaded files into Oracle Object Storage! These could then be used to load data into the ADW as you did in Step 5.
