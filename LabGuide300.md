@@ -129,7 +129,7 @@ When you are satisfied with the file content view, click **NEXT**.
     Use the following username and "password" (also know as authorization token)
 
     username - **cloud.admin**
-    
+
     password - **CRx{8JcdL6Dw6_wuG0zQ**
 
     ![](./images/300/snap0015312.jpg)
@@ -166,7 +166,7 @@ https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/sa
 
     -   Select **Oracle Cloud Storage** as source for the data load
 
-    -   Enter the URL of **customers.csv** as the file to load. You constructed the URL in STEP 8 Construct the URLs of the Files on Your OCI Object Storage. For example, the URL might look something like:
+    -   Enter the URL of **customers.csv** as the file to load. Remember to use the URLs listed above. The customer URL is:
 
         https://swiftobjectstorage.us-ashburn-1.oraclecloud.com/v1/gse00014543/ADWHOL/customers.csv
 
