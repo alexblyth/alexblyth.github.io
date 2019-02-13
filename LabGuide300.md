@@ -29,7 +29,7 @@ For more information about loading data, see the documentation <a href="https://
 If you are interesting is using impdp to copy data from an existing Oracle database, there is some good example code at the ORACLE-BASE website: <a href="https://oracle-base.com/articles/vm/oracle-cloud-autonomous-data-warehouse-adw-import-data-from-object-store">https ://oracle-base.com/articles/vm/oracle-cloud-autonomous-data-warehouse-adw-import-data-from-object-store</a>.
 
 
-To **log issues**, click [here](https://github.com/millerhoo/journey4-adwc/issues/new) to go to the github oracle repository issue submission form.
+To **log issues**, click [here](https://github.com/alexblyth/alexblyth.github.io/issues/new) to go to the github oracle repository issue submission form.
 
 ## Objectives
 

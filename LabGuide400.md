@@ -13,7 +13,7 @@ If you are interesting querying data from S3 (as compared to querying from the O
 
 **Note:** Make sure you have completed <a href="https://millerhoo.github.io/journey4-adwc/workshops/journey4-adwc/LabGuide300.md" target="_blank">Lab 300: Loading Data</a> before you take this lab. Because you will use the data files on the OCI Object Storage and the credential object from Lab 300 in this lab.
 
-To **log issues**, click [here](https://github.com/millerhoo/journey4-adwc/issues/new) to go to the github oracle repository issue submission form.
+To **log issues**, click [here](https://github.com/alexblyth/alexblyth.github.io/issues/new) to go to the github oracle repository issue submission form.
 
 ## Objectives
 

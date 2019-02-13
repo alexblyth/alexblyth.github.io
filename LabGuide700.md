@@ -8,6 +8,8 @@ Updated: Feb 14 2019
 
 During this lab you will be using the new Oracle Machine Learning (OML) notebook application provided with ADWC. This browser-based application provides a web interface to run SQL queries and scripts, which can be grouped together within a notebook. Notebooks can be used to build single reports, collections of reports, and dashboards. OML provides a simple way to share workbooks with other OML users.
 
+To **log issues**, click [here](https://github.com/alexblyth/alexblyth.github.io/issues/new) to go to the github oracle repository issue submission form.
+
 ## Objectives
 
 -   Learn how to create OML Users

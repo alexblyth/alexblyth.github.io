@@ -8,6 +8,8 @@ Updated: Feb 14 2019
 
 During this lab you will be using the Oracle Machine Learning (OML) notebook application provided with ADWC to explore some samples of the DBMS_PREDICTIVE_ANALYTICS functionality. DBMS_PREDICTIVE_ANALYTICS provides a set of easy-to-use machine learning procedures to simplify the machine learning process.
 
+To **log issues**, click [here](https://github.com/alexblyth/alexblyth.github.io/issues/new) to go to the github oracle repository issue submission form.
+
 ## Objectives
 
 -   Learn how to import notebooks into Oracle ML Notebook

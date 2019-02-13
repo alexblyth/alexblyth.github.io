@@ -12,6 +12,8 @@ At this point, you should have performed the following:
 
 1. Created an ADWC instance and downloaded the credentials wallet.  
 
+To **log issues**, click [here](https://github.com/alexblyth/alexblyth.github.io/issues/new) to go to the github oracle repository issue submission form.
+
 ## Objectives
 - Learn how to connect a desktop analytics tool to the powerful Autonomous Data Warehouse 
 - Learn how to secure a desktop client connection to Autonomous Data Warehouse
