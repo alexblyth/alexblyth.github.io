@@ -1,6 +1,8 @@
 ![](./images/900/title900-2.jpg)
 
-# Lab 900: Create Data Visualizations from ADWC
+Updated: Feb 14 2019
+
+# Lab 2: Create Data Visualizations from ADWC
 
 ## Introduction
 

@@ -1,8 +1,8 @@
 ![](images/600/TITLE600.JPG)
 
-Draft Version. Updated: March 13, 2018
+Updated: Feb 14 2019
 
-# ADWC Lab 600: Scaling and Performance
+# ADWC Lab 7: Scaling and Performance
 
 ## Introduction
 

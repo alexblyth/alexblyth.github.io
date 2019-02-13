@@ -1,8 +1,8 @@
 ![](images/200/TITLE200.JPG)
 
-Draft Version. Updated: March 19, 2018
+Updated: Feb 14 2019
 
-# ADWC Lab 200: Working with Database Services and Sample Data Sets
+# ADWC Lab 3: Working with Database Services and Sample Data Sets
 
 ## Introduction
 

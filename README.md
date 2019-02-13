@@ -47,7 +47,7 @@ This workshop walks you through all the steps to get started using the **Oracle 
 # Workshop Details
 
 
-## Lab 100: Provisioning and Connecting
+## Lab 1: Provisioning and Connecting
 
 **Documentation**: [LabGuide100StartHereNEW.md](LabGuide100StartHereNEW.md)
 
@@ -58,7 +58,20 @@ This workshop walks you through all the steps to get started using the **Oracle 
 - Learn how to download the client credentials wallet file
 - Learn how to connect from Oracle SQL Developer
 
-## Lab 200: Working with Database Services and Sample Data Sets
+## Lab 2: Create Data Visualizations from ADWC
+
+**Documentation**: [LabGuide900.md](LabGuide900.md)
+
+**Objectives**:
+
+- Learn how to connect a desktop analytics tool to Autonomous Data Warehouse
+- Learn how to secure a desktop client connection to Autonomous Data Warehouse
+- Learn how to create a simple data visualization project with Oracle Data Visualization Desktop
+- Learn how to access and gain insights from data in the Autonomous Data Warehouse
+
+## Optional (but recommended) Labs
+
+## Lab 3: Working with Database Services and Sample Data Sets
 
 **Documentation**: [LabGuide200.md](LabGuide200.md)
 
@@ -69,7 +82,7 @@ This workshop walks you through all the steps to get started using the **Oracle 
 - See how the different levels of database service affect performance and concurrency
 
 
-## Lab 300: Data Loading
+## Lab 4: Data Loading
 
 **Documentation**: [LabGuide300.md](LabGuide300.md)
 
@@ -81,7 +94,7 @@ This workshop walks you through all the steps to get started using the **Oracle 
 - Learn how to troubleshoot data loads
 
 
-## Lab 400: Query External Tables
+## Lab 5: Query External Tables
 
 **Documentation**: [LabGuide400.md](LabGuide400.md)
 
@@ -92,7 +105,7 @@ This workshop walks you through all the steps to get started using the **Oracle 
 - Learn how to create data warehouse user 
 
 
-## Lab 500: Managing and Monitoring ADWC using the Cloud Console
+## Lab 6: Managing and Monitoring ADWC using the Cloud Console
 
 **Documentation**: [LabGuide500.md](LabGuide500.md)
 
@@ -102,9 +115,7 @@ This workshop walks you through all the steps to get started using the **Oracle 
 - Learn how to recover your ADWC database if needed
 - Learn how to use the service console to monitor the performance of your ADWC instance
 
-
-
-## Lab 600: Scaling and Performance in ADWC
+## Lab 7: Scaling and Performance in ADWC
 
 **Documentation**:  [LabGuide600.md](LabGuide600.md)
 
@@ -113,7 +124,7 @@ This workshop walks you through all the steps to get started using the **Oracle 
 - Learn how to scale up and down the ADWC instance
 - See how scaling affects ADWC concurrency and performance
 
-## Lab 700: Oracle Machine Learning Notebooks
+## Lab 8: Oracle Machine Learning Notebooks
 
 **Documentation**: [LabGuide700.md](LabGuide700.md)
 
@@ -124,7 +135,7 @@ This workshop walks you through all the steps to get started using the **Oracle 
 - Learn how to share notebooks
 - Learn how to create and run SQL scripts
 
-## Lab 800: Basic Machine Learning (DBMS_PREDICTIVE_ANALYTICS)
+## Lab 9: Basic Machine Learning (DBMS_PREDICTIVE_ANALYTICS)
 
 **Documentation**: [LabGuide800.md](LabGuide800.md)
 
@@ -134,19 +145,7 @@ This workshop walks you through all the steps to get started using the **Oracle 
 - Learn how to use DBMS_PREDICTIVE_ANALYTICS routines
 - Learn how to use Oracle ML Gallery
 
-## Lab 900: Create Data Visualizations from ADWC
-
-**Documentation**: [LabGuide900.md](LabGuide900.md)
-
-**Objectives**:
-
-- Learn how to connect a desktop analytics tool to Autonomous Data Warehouse
-- Learn how to secure a desktop client connection to Autonomous Data Warehouse
-- Learn how to create a simple data visualization project with Oracle Data Visualization Desktop
-- Learn how to access and gain insights from data in the Autonomous Data Warehouse
-
-
-## Lab 1000: Integrating with ADWC
+## Lab 10: Integrating with ADWC
 
 **Documentation**: [LabGuideDIPC.md](LabGuideDIPC.md)
 

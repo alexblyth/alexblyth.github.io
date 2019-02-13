@@ -1,8 +1,8 @@
 ![](images/400/TITLE400.png)
 
-Updated: April 6, 2018
+Updated: Feb 14 2019
 
-# ADWC Lab 400: Query External Data 
+# ADWC Lab 5: Query External Data 
 
 ## Introduction
 

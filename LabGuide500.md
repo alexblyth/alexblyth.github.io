@@ -1,8 +1,8 @@
 ![](images/500/TITLE500.JPG)
 
-Draft Version. Updated: March 13, 2018
+Updated: Feb 14 2019
 
-# ADWC Lab 500: Managing and Monitoring ADWC using the Cloud Console
+# ADWC Lab 6: Managing and Monitoring ADWC using the Cloud Console
 
 ## Introduction
 
