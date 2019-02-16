@@ -39,7 +39,7 @@ This workshop walks you through all the steps to get started using the **Oracle 
 
     ![](images/WorkshopMenu.png)  
 
-- To **log issues**, click [here](https://github.com/millerhoo/journey4-adwc/issues/new) to go to the github oracle repository issue submission form.
+To **log issues**, click [here](https://github.com/alexblyth/alexblyth.github.io/issues/new) to go to the github oracle repository issue submission form.
 
 
 
